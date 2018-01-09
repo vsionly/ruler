@@ -1,0 +1,91 @@
+page {
+  height: 100%;
+  display: flex;
+  padding-bottom: 100rpx;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.board {
+  padding: 42rpx;
+  margin: 40rpx 32rpx 100rpx;
+  border-radius: 30rpx;
+  background: #00a0ea;
+  color: #fff;
+  text-align: center;
+}
+.bim {
+  margin-right: 20rpx;
+  vertical-align: middle;
+  line-height: 19px;
+}
+.help {
+  display: inline-block;
+  width: 38rpx;
+  height: 38rpx;
+  border-radius: 4px;
+  background: #fff;
+  line-height: 42rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #00a0ea;
+}
+.scope {
+  margin: 40rpx 0 16rpx;
+  font-size: 32rpx;
+}
+.describe {
+  font-size: 28rpx;
+  line-height: 44rpx;
+}
+.title {
+  font-size: 30rpx;
+  color: #00a0ea;
+  text-align: center;
+}
+.point {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  margin-left: -6px;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0,160,234,0.47);
+  border-radius: 50%;
+  z-index: 99;
+}
+.point::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  margin-left: -3px;
+  width: 6px;
+  height: 6px;
+  background-color: #00a0ea;
+  border-radius: 50%;
+  z-index: 100;
+}
+.btn-confirm {
+  display: inline-block;
+  padding: 0rpx 99rpx;
+  border-radius: 10rpx;
+  background: #00a0ea;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+.btn-confirm.hover {
+  background: #08adf9;
+}
+.relative {
+  position: relative;
+}
+.center {
+  text-align: center;
+}
+.mb20 {
+  margin-bottom: 40rpx;
+}
+.mb40 {
+  margin-bottom: 80rpx;
+}

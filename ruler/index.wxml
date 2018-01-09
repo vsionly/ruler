@@ -1,0 +1,39 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='board'>
+        <view>
+            <text class='bim'>BMI:{{bmi}} </text>
+            <text class='help'>?</text>  
+        </view>
+        <view wx:if="{{bmi < 18.5}}">
+            <view class='scope'>体重过轻</view>
+            <view class='describe'>您的体重过低，请加强营养。增加热量摄入，适当运动，可增强抵抗力，降低患慢性病的风险。</view>
+        </view>
+        <view wx:if="{{bmi>=18.5 && bmi<24}}">
+            <view class='scope'>正常</view>
+            <view class='describe'>您的体重处于正常范围，请继续保持哦~</view>
+        </view>
+        <view wx:if="{{bmi>=24 && bmi<28}}">
+            <view class='scope'>偏胖</view>
+            <view class='describe'>您目前处于超重状态，请改变生活方式，戒烟、酒，合理膳食，降低脂肪和热量摄入，加强运动。建议降低体重5%。</view>
+        </view>
+        <view wx:if="{{bmi > 28}}">
+            <view class='scope'>肥胖</view>
+            <view class='describe'>您目前处于肥胖状态，请改变生活方式，合理膳食，降低脂肪和热量摄入，加强运动，定期检查体重。建议降低体重10%。</view>
+        </view>
+    </view>
+    <view class='title'>{{statureVal}}CM</view>
+    <view class='relative mb40'>
+        <scroll-view scroll-x bindscroll="statureRoll" scroll-left="{{statureLeft}}" style="padding:0 30px;position:relative;z-index:5">
+            <canvas canvas-id="stature" style="width:{{statureW}}px; height: 80px;position:relative;z-index:3"></canvas> 
+        </scroll-view>
+        <view class='point'></view>
+    </view>
+    <view class='title'>{{weightVal}}KG</view>
+    <view class='relative mb20'>
+        <scroll-view scroll-x bindscroll="weightRoll" scroll-left="{{weightLeft}}" style="padding:0 30px;position:relative;z-index:5">
+            <canvas canvas-id="weight" style="width:{{weightW}}px; height: 80px;position:relative;z-index:3"></canvas> 
+        </scroll-view>
+        <view class='point'></view>
+    </view>
+    <view class='center'><button class='btn-confirm' hover-class="hover">确定</button></view>
+</form>
