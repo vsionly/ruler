@@ -1,11 +1,10 @@
-ruler
-=
-微信小程序中的刻度尺功能
----
+### ruler
+
+微信小程序中的刻度尺功能<br>
 
 下载文件到本地  放到pages中  配置好路由 即可查看 
 
-***基于scroll-view 官方文档中不让在scroll-view 使用canvas 目前没有其他解决方案 也没有大的bug***
+**基于scroll-view 官方文档中不让在scroll-view 使用canvas 目前没有其他解决方案 也没有大的bug**
 
 有不足的地方 欢迎指正
 
