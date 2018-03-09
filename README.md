@@ -3,7 +3,9 @@
 
 下载文件到本地  放到pages中  配置好路由 即可查看 
 
-有不足的地方 欢迎指正 老鸟里的前端小菜鸟  
+***基于scroll-view 官方文档中不让在scroll-view 使用canvas 目前没有其他解决方案 也没有大的bug***
+
+有不足的地方 欢迎指正
 
 邮箱 liwsh666@126.com 
 微信 lywsion
