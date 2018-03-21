@@ -4,8 +4,8 @@
 
 下载文件到本地  放到pages中  配置好路由 即可查看 
 
-**基于scroll-view 官方文档中不让在scroll-view 使用canvas 目前没有其他解决方案 也没有大的bug**
-
+*基于scroll-view 官方文档中不让在scroll-view 使用canvas 目前没有其他解决方案 也没有大的bug*
+关于刻度尺中间的游标  在手机上显示是在刻度尺下面的  如果产品需要  可以使用canvas去画这个圆点
 有不足的地方 欢迎指正
 
 邮箱 liwsh666@126.com 
